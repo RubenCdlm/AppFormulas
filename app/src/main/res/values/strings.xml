@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Aplicacion</string>
+    <string name="fibonacci">Fibonachi</string>
+    <string name="factorial">Factorial</string>
+    <string name="limpiar">Borrar</string>
+    <string name="TextEditValor">Ingrese un valor</string>
+    <string name="Rfibonacci">Respuesta Fibonacci</string>
+    <string name="Rfactorial">Respuesta Factorial</string>
+</resources>

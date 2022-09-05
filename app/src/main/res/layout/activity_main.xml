@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/LayoutText"
+        android:layout_width="0dp"
+        android:layout_height="210dp"
+        android:background="#673AB7"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <EditText
+            android:id="@+id/numValor"
+            android:layout_width="194dp"
+            android:layout_height="65dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/TextEditValor"
+            android:inputType="number"
+            android:textColor="@android:color/background_light"
+            android:textColorHint="#FFFFFF"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LayoutBotonFibonacci"
+        android:layout_width="0dp"
+        android:layout_height="169dp"
+        android:layout_marginBottom="16dp"
+        android:background="#3F51B5"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LayoutText"
+        app:layout_constraintVertical_bias="0.0">
+
+        <Button
+            android:id="@+id/bfibonacci"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#9C27B0"
+            android:text="@string/fibonacci" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LayoutBotonFactorial"
+        android:layout_width="0dp"
+        android:layout_height="68dp"
+        android:background="#9C27B0"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LayoutBotonFibonacci"
+        app:layout_constraintVertical_bias="0.0">
+
+        <Button
+            android:id="@+id/bfactorial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/factorial" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LayoutRespuestaFactorial"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#9C27B0"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/LayoutLimpiar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/LayoutRespuestaFibonacci"
+        app:layout_constraintTop_toBottomOf="@+id/LayoutBotonFactorial"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/rFactorial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="@string/Rfactorial"
+            android:textColorHint="#FFFFFF"
+            android:text="@string/Rfactorial"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LayoutRespuestaFibonacci"
+        android:layout_width="183dp"
+        android:layout_height="123dp"
+        android:background="#9C27B0"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LayoutBotonFactorial"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/rFibonacci"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="@string/Rfibonacci"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            tools:text="@string/Rfibonacci" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LayoutLimpiar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#9C27B0"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LayoutRespuestaFibonacci">
+
+        <Button
+            android:id="@+id/blimpiar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/limpiar" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
